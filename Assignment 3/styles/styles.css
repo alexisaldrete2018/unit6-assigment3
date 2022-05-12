@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    background-image: url('../images/back2.jpg');
+    background-size: cover;
+    background-repeat: none;
+}
+
+h1{
+    padding-top: 2%;
+    box-sizing: border-box;
+    height: 10vh;
+    margin: 0;
+    text-align: center;
+}
+
+#list{
+    flex: 5;
+    min-height: 90vh;
+}
+
+#form{
+    flex: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    min-height: 90vh;
+    color: white;
+}
+
+#iImportant{
+    font-size:  32px;
+    cursor: pointer;
+}
+
+.fas{
+    color: rgb(216,17,17);
+}
+
+.far{
+    color: rgb(135,135,135);
+}
+
+.buttons-div{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.buttons-div button{
+    margin: 15px;
+}
+
+.task-item{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.task-item h1, h5, p{
+    margin: 0;
+}
+
+.normal{
+    border: 3px solid white;
+}
+
+.important{
+    border: 3px solid red;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.task-item .info-0{
+    flex: 1;
+}
+
+.task-item .info-1{
+    flex: 3;
+}
+
+.task-item .info-2{
+    flex: 3;
+}
+
+.task-item .info2 label, .task-item .info-3 p {
+    display: block;
+}
+
+.task-item .info-3{
+    flex:3;
+}
+
+.task-item .info-4{
+    flex:3;
+}

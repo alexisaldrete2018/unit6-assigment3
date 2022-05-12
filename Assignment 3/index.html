@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <main class="main">
+
+        <section id="list">
+            <div class="buttons-div">
+                <button class="btn btn-secondary" id="clearTasksButton">Clear Tasks</button>
+                <button class="btn btn-primary" id="hideFormButton">Hide Form </button>
+            </div>
+        </section>
+
+        <section id="form">
+            <form>
+                <div class="form-row">
+
+                    <div class="form-group col-md-12">
+                        <label for="inputTitle">Title</label>
+                        <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+                    </div>
+
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label for="important">Important</label>
+                        <i id="iImportant" class="iImportant far fa-star"></i>
+                    </div>
+
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label for="inputDescription">Description</label>
+                        <textarea class="form-control" id="inputDescription" rows="3"></textarea>
+                    </div>            
+
+                </div>
+
+                <div class="form-row">
+                    
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label for="date">Date</label>
+                        <input type="datetime-local" class="form-control" id="date">
+                    </div>
+
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label for="inputLocation">Location</label>
+                        <input type="text" class="form-control" id="inputLocation">
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label for="inputInvites">Invites</label>
+                        <input type="text" class="form-control" id="inputInvites">
+                    </div>
+
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label for="inputColor">Color</label>
+                        <input type="color" class="form-control" id="inputColor">
+                    </div>
+                
+                </div>
+
+                <div class="form-row">
+                    
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label class="form-label">Frequency</label>
+                        <select class="form-select" id="inputFrequency">
+                            <option value="0">One time</option>
+                            <option value="1">Daily</option>
+                            <option value="2">Weekly</option>
+                            <option value="3">Monthly</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <div class="form-group col-md-12">
+                        <label class="form-label">Status</label>
+                        <select class="form-select" id="inputStatus">
+                            <option value="1">Pending</option>
+                            <option value="2">In progress</option>
+                            <option value="3">Paused</option>
+                            <option value="4">Completed</option>
+                            <option value="5">Abandoned</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <br>
+
+                
+              </form>
+
+              <button type="enterTask" id="submitTaskButton" class="btn btn-primary">Enter Task</button>
+        </section>
+    
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/test1.js"></script>
+    <script src="scripts/task.js"></script>
+</body>
+</html>
